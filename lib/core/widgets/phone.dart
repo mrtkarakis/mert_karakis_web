@@ -120,21 +120,22 @@ enum AppType {
   linkedin('LinkedIn', 'https://www.linkedin.com/in/mert-karakis/', 'linkedin',
       false),
   medium('Medium', 'https://medium.com/@mrtkarakis', 'medium', false),
-  mail('Mail', 'https://medium.com/@mrtkarakis', 'mail', false),
+  mail('Mail', 'https://medium.com/@mrtkarakis', 'mail', false);
   // contacts('Contacts', 'https://medium.com/@mrtkarakis', 'contacts', true),
-  aboutMe('About Me', 'https://medium.com/@mrtkarakis', 'about_me', true),
+  // aboutMe('About Me', 'https://medium.com/@mrtkarakis', 'about_me', true),
   // technologies(
   // 'Technologies', 'https://medium.com/@mrtkarakis', 'technologies', true),
-  tokenGo('Token Go', 'https://medium.com/@mrtkarakis', 'token_go_logo', true),
-  cmonHealth('Cmon Health', 'https://medium.com/@mrtkarakis',
-      'cmon_health_logo', true),
-  cryptory('Cryptory', 'https://medium.com/@mrtkarakis', 'cryptory_logo', true),
-  slothy('Slothy', 'https://medium.com/@mrtkarakis', 'slothy_logo', true),
-  requestJob('Request Job', 'https://medium.com/@mrtkarakis', 'add', true);
+  // tokenGo('Token Go', 'https://medium.com/@mrtkarakis', 'token_go_logo', true),
+  // cmonHealth('Cmon Health', 'https://medium.com/@mrtkarakis',
+  //     'cmon_health_logo', true),
+  // cryptory('Cryptory', 'https://medium.com/@mrtkarakis', 'cryptory_logo', true),
+  // slothy('Slothy', 'https://medium.com/@mrtkarakis', 'slothy_logo', true),
+  // requestJob('Request Job', 'https://medium.com/@mrtkarakis', 'add', true);
 
   final String title;
   final String url;
   final String iconPath;
   final bool isPage;
   const AppType(this.title, this.url, this.iconPath, this.isPage);
+  String fullPath() => "assets/icons/$iconPath.png";
 }
