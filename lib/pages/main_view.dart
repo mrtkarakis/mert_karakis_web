@@ -17,23 +17,28 @@ class _MainPageState extends State<MainPage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
         body: Responsive(
-      desktop: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 20),
-        width: size.width,
-        child: Row(
-          children: const [PhoneCase(), SizedBox(width: 20), AppPage()],
-        ),
-      ),
-      mobile: Container(
-        child: Center(
-          child: Text("sorry it's only available for desktop at the moment"),
-        ),
-      ),
-      tablet: Container(
-        child: Center(
-          child: Text("sorry it's only available for desktop at the moment"),
-        ),
-      ),
-    ));
+            desktop: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 20),
+                width: size.width,
+                child: Container(
+                  child: Column(
+                    children: [Center(child: Text("Mert Karakış"))],
+                  ),
+                )
+                //  Row(
+                //   children: const [PhoneCase(), SizedBox(width: 20), AppPage()],
+                // ),
+                ),
+            mobile: Container(
+              child: Column(
+                children: [Center(child: Text("Mert Karakış"))],
+              ),
+            ),
+            tablet: Container(
+              child: Column(
+                children: [Center(child: Text("Mert Karakış"))],
+              ),
+            )));
   }
 }
